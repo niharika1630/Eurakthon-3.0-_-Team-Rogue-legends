@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FraudGuard AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>💳 FraudGuard AI – Live Fraud Monitoring</h1>
+
+<div class="dashboard">
+    <div class="card">Total<br><span id="total">0</span></div>
+    <div class="card">Flagged<br><span id="flagged">0</span></div>
+    <div class="card">Blocked<br><span id="blocked">0</span></div>
+</div>
+
+<div id="transactionBox"></div>
+<div id="riskBox"></div>
+
+<h2>Transaction History</h2>
+<table id="historyTable">
+<tr>
+<th>Sender</th>
+<th>Receiver</th>
+<th>Amount</th>
+<th>Risk</th>
+</tr>
+</table>
+
+</div>
+
+<!-- Sound alert -->
+<audio id="alertSound" src="https://www.soundjay.com/buttons/sounds/beep-07.mp3"></audio>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

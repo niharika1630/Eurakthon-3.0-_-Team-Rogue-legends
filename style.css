@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+#transactionBox, #riskBox {
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: 0.5s ease;
+}
+
+.high-risk {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { background-color: rgba(255,0,0,0.3); }
+    50% { background-color: rgba(255,0,0,0.6); }
+    100% { background-color: rgba(255,0,0,0.3); }
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+th {
+    background: rgba(255,255,255,0.2);
+}
+
+td, th {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.green { color: #00ff88; }
+.orange { color: orange; }
+.red { color: red; }
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.approve { background: #00ff88; }
+.block { background: red; color: white; }
